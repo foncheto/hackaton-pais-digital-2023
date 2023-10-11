@@ -14,11 +14,11 @@ load_dotenv()
 if __name__ == '__main__':
     try:
         llm = AzureChatOpenAI(
-            deployment_name="TU_DEPLOYMENT_NAME_PARA_MODELO_CHAT",
+            deployment_name="educai_chat35",
             model_name="gpt-35-turbo", #<--- aquí deben probar tambien con el otro modelo disponible (gpt-35-turbo-16k)
         )
         embeddings = OpenAIEmbeddings(
-            deployment="TU_DEPLOYMENT_NAME_PARA_MODELO_EMBEDDING",
+            deployment="educai_emb",
             model="text-embedding-ada-002",
         )
 
